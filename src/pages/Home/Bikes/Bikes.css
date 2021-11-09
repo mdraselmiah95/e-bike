@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
+#bikes h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  font-family: "Ultra", serif;
+  position: relative;
+}
+#bikes h1::after {
+  content: "";
+  border-radius: 5px;
+  position: absolute;
+  left: 50%;
+  top: 115%;
+  bottom: 0px;
+  width: 10%;
+  transform: translate(-50%, 0);
+  border-bottom: 2px solid;
+}

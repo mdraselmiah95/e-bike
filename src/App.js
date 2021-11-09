@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
+import BikeDetails from "./pages/BikeDetails/BikeDetails";
 import Home from "./pages/Home/Home/Home";
 import NotFound from "./pages/NotFound/NotFound";
 import Footer from "./pages/Shared/Footer/Footer";
@@ -16,6 +17,9 @@ function App() {
         </Route>
         <Route exact path="/home">
           <Home />
+        </Route>
+        <Route path="/bikeDetails/:id">
+          <BikeDetails />
         </Route>
         <Route path="*">
           <NotFound />
