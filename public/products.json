@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "CB1000R GREEN",
+    "details": "The Honda CB1000R has built its reputation on powerful, understated performance combined.",
+    "price": "$1299",
+    "more": "The new Honda CB1000R doesn't chase super naked glory or go full retro, but by nestling nicely in between they’ve created a fast, slick, beautifully-crafted roadster that’s daringly different with a style of its own. It’s not the naked Blade some might have hoped for but we reckon it’s much better for it. ",
+    "img": "https://i.ibb.co/3WMnr2b/green-4.png"
+  },
+  {
+    "id": 2,
+    "title": "CBR650R ABS",
+    "details": "Four-cylinder sport bikes are a specialized breed. Smooth, quick-revving power, fast, effortless acceleration.",
+    "price": "$9699",
+    "more": "They’re the basis for the machines in the World Supersport championships. Smooth, quick-revving power, fast, effortless acceleration: once you’ve tasted all they can offer, there’s no going back. Which is why the 2021 Honda CBR650R ABS is such a delight. Plus, this year it’s even better, with new cams and intake timing, an improved LED instrument panel, and—best of all—a new Showa 41mm SFF-BP “Big Piston” front suspension. It’s a standout on the street, with a riding position and a nice, wide powerband that are perfect for everyday riding too. As a do-it-all streetbike",
+    "img": "https://i.ibb.co/Fmj25Zg/yellow-3.png"
+  },
+  {
+    "id": 3,
+    "title": "CB650R ABS",
+    "details": "Honda’s legendary CB750K0 introduced the motorcycling world to the modern inline-four.",
+    "price": "$9199",
+    "more": "Honda’s legendary CB750K0 introduced the motorcycling world to the modern inline-four, and the world has never looked back. That’s because the configuration delivers a magical balance of power delivery, smoothness, and instant acceleration in a tight, clean package. Plus, there are those awesome waterfall headers! Today, Honda’s CB650R stands almost alone in offering that combination in a 650-sized machine. Plus, we wrap it all up in a contemporary take on the modern naked sportbike we call Neo Sports Café.",
+    "img": "https://i.ibb.co/0XtZ8tB/back-2.png"
+  },
+  {
+    "id": 4,
+    "title": "CBR500R ABS",
+    "details": "Honda CBR500R is one of our most popular sport bikes for Power. Weight. Handling.",
+    "price": "$6999",
+    "more": "Is it any wonder why the Honda CBR500R is one of our most popular sportbikes? It just gets so many things right. Price. Power. Weight. Handling. Its twin-cylinder engine revs freely and produces plenty of torque, and it lets us keep the bike narrow and nimble too. The full-coverage bodywork looks like something right off the racetrack. Best of all, it’s a bike you can start out on and never have to trade up. Plus, for 2021,every CBR500R comes with anti-lock brakes (ABS) as standard equipment.",
+    "img": "https://i.ibb.co/7bGK4VM/white-5.png"
+  },
+  {
+    "id": 5,
+    "title": "Honda Activa 6G",
+    "details": "The Activa 6G now looks like a scaled-down Activa 125.",
+    "price": "$699",
+    "more": "Honda Activa 6G is a mileage scooter available at a starting price of Rs. 70,331 in India. It is available in 4 variants and 8 colours with top variant price starting from Rs. 73,594. The Honda Activa 6G is powered by 109.51cc BS6 engine which develops a power of 7.68 bhp and a torque of 8.79 Nm. With both front and rear drum brakes,",
+    "img": "https://i.ibb.co/vjGTjkS/red-4.png"
+  },
+  {
+    "id": 6,
+    "title": "Honda Activa 125",
+    "details": "As part of its BS6 updates, the Honda Activa 125 gets an LED headlamp.",
+    "price": "$1050",
+    "more": "Honda Activa 125 is a scooter available at a starting price of Rs. 74,797 in India. It is available in 3 variants and 4 colours with top variant price starting from Rs. 81,972. The Honda Activa 125 is powered by 124cc BS6 engine which develops a power of 8.18 bhp and a torque of 10.3 Nm. With both front and rear drum brakes, Honda Activa 125 comes up with combined braking system of both wheels.",
+    "img": "https://i.ibb.co/BKSQzbD/yellow-1.png"
+  }
+]

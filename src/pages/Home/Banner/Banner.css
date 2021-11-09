@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+.banner {
+  background-image: url("../../images/banner/banner.jpg"),
+    linear-gradient(#32342e7a, #14181399);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-blend-mode: overlay;
+}
+.banner p {
+  font-family: "DM Serif Display", serif;
+  letter-spacing: 1.5px;
+}
+.mainTitle {
+  letter-spacing: 1px;
+  font-size: 3rem;
+  font-family: "Ultra", serif;
+}
+body {
+  overflow-x: hidden;
+}

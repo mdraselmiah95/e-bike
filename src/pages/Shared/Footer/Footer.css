@@ -1,0 +1,43 @@
+.icon {
+  margin: 5px;
+  padding: 4px 10px;
+  background-color: rgb(46, 46, 46);
+  border-radius: 5px;
+  color: white;
+  font-size: 25px;
+  transition: 1s;
+}
+.icon:hover {
+  background-color: rgb(31, 119, 65);
+}
+a {
+  color: #4092b9;
+  margin: 15px 0;
+  display: block;
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: 700;
+  transition: 1s;
+}
+.footer-menu-container a:hover {
+  color: white !important;
+}
+.footer-input {
+  margin-top: 15px;
+  color: rgb(30, 32, 32);
+  padding: 8px;
+  border: 1px solid black;
+  outline: none;
+  background-color: #765b5b00;
+  border-radius: 5px;
+}
+.footer-container {
+  background-color: #4054cfd1;
+  padding: 50px;
+  color: rgb(216, 209, 209);
+}
+.footer-phone-icon {
+  font-size: 20px;
+  color: white;
+  margin-right: 10px;
+}
