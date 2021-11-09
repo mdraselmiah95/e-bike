@@ -1,12 +1,9 @@
-import { faAngleDoubleRight, faInfo } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { Link } from "react-router-dom";
-import "./Bike.css";
-const Bike = (props) => {
-  const { id, title, details, img, price } = props.bike;
+import "./MoreBike.css";
+const MoreBike = (props) => {
+  const { title, details, img, price } = props.bike;
   return (
-    <div className="col-lg-4 col-md-6 offer">
+    <div className="col-lg-4 col-md-6 moreBike">
       <div className="col">
         <div
           className="card p-2 text-center shadow"
@@ -18,7 +15,7 @@ const Bike = (props) => {
             <p className="">{details}</p>
             <h3>{price}</h3>
             <div className="d-flex justify-content-between">
-              <Link to={`/bikeDetails/${id}`}>
+              {/* <Link to={`/bikeDetails/${id}`}>
                 <button className="btn btn-outline-dark">
                   <FontAwesomeIcon
                     icon={faInfo}
@@ -27,8 +24,8 @@ const Bike = (props) => {
                   />
                   BIKE DETAILS
                 </button>
-              </Link>
-              <Link to="/moreBikes">
+              </Link> */}
+              {/* <Link to="/moreBikes">
                 <button className="btn btn-outline-dark">
                   <FontAwesomeIcon
                     icon={faAngleDoubleRight}
@@ -37,7 +34,7 @@ const Bike = (props) => {
                   />
                   EXPLORE MORE
                 </button>
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>
@@ -46,4 +43,4 @@ const Bike = (props) => {
   );
 };
 
-export default Bike;
+export default MoreBike;

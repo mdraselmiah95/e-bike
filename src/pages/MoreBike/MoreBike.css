@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+/* .offer img {
+  transition: all 0.8s ease-in-out;
+}
+
+.offer img:hover {
+  transform: scale(1.1);
+} */
+.moreBike h4 {
+  font-family: "DM Serif Display", serif;
+  letter-spacing: 1.5px;
+  font-weight: 800;
+}
+.moreBike p {
+  font-family: "Roboto Slab", serif;
+}

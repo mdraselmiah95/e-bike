@@ -28,8 +28,8 @@ const Header = () => {
             <Nav.Link className="navItem me-1" as={HashLink} to="/home#sports">
               Sports
             </Nav.Link>
-            <Link className="navItem me-3" to="/gallery">
-              Gallery
+            <Link className="navItem me-3" to="/moreBikes">
+              Explore
             </Link>
 
             {/* {user.email ? (
