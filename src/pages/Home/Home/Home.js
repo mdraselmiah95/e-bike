@@ -1,6 +1,7 @@
 import React from "react";
 import Banner from "../Banner/Banner";
 import Bikes from "../Bikes/Bikes";
+import Beauty from "../Parallax/Beauty";
 import Questions from "../Questions/Questions";
 import "./Home.css";
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
       <Banner />
       <Bikes />
       <Questions />
+      <Beauty />
     </div>
   );
 };
