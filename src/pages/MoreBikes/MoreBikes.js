@@ -6,7 +6,7 @@ const MoreBikes = () => {
   const [moreBikes, setMoreBikes] = useState([]);
 
   useEffect(() => {
-    fetch("./more.json")
+    fetch("http://localhost:5000/moreBike")
       .then((res) => res.json())
       .then((data) => {
         setMoreBikes(data);

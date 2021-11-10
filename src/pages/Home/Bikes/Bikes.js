@@ -5,7 +5,7 @@ const Bikes = () => {
   const [loader, setLoader] = useState(true);
   const [bikes, setBikes] = useState([]);
   useEffect(() => {
-    fetch("./products.json")
+    fetch("http://localhost:5000/bikes")
       .then((res) => res.json())
       .then((data) => {
         setBikes(data);

@@ -4,14 +4,16 @@ import React, { useEffect, useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import { useParams } from "react-router";
 import { NavLink } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
 
 const Purchase = () => {
   // const [loader, setLoader] = useState(true);
+  const { user } = useAuth();
   const { id } = useParams();
   const [moreBikes, setMoreBikes] = useState([]);
 
   useEffect(() => {
-    fetch("/more.json")
+    fetch("http://localhost:5000/moreBike")
       .then((res) => res.json())
       .then((data) => {
         setMoreBikes(data);
@@ -23,8 +25,8 @@ const Purchase = () => {
   const price = matchingItem?.price;
 
   const initialInfo = {
-    Service: title,
-    price: price,
+    name: user.displayName,
+    email: user.email,
     phone: "",
   };
   const [purchase, setPurchase] = useState(initialInfo);
@@ -42,8 +44,8 @@ const Purchase = () => {
     alert("submitting");
     const productPurchase = {
       ...purchase,
-      name: title,
-      price: price,
+      price,
+      ProductName: title,
     };
     console.log(productPurchase);
     e.preventDefault();
@@ -59,6 +61,18 @@ const Purchase = () => {
           <Form onSubmit={handleBookingSubmit}>
             <Form.Control disabled defaultValue={title} className="mb-3" />
             <Form.Control disabled defaultValue={price} className="mb-3" />
+            <Form.Control
+              className="mb-3"
+              defaultValue={user.displayName}
+              name="name"
+              onBlur={handleOnBlur}
+            />
+            <Form.Control
+              className="mb-3"
+              defaultValue={user.email}
+              name="email"
+              onBlur={handleOnBlur}
+            />
             <Form.Control
               className="mb-3"
               type="date"
