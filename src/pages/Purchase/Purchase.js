@@ -48,7 +48,7 @@ const Purchase = () => {
     console.log(productPurchase);
     e.preventDefault();
   };
-
+  const url = "https://i.ibb.co/2PLcyzK/purchase.png";
   return (
     <div className="container my-5">
       <h2 className="text-center fw-bold itemsDelete my-3 text-success">
@@ -57,15 +57,17 @@ const Purchase = () => {
       <div className="row align-items-center">
         <div className="col-md-6 p-4">
           <Form onSubmit={handleBookingSubmit}>
-            <Form.Control disabled defaultValue={title} />
-            <Form.Control disabled defaultValue={price} />
+            <Form.Control disabled defaultValue={title} className="mb-3" />
+            <Form.Control disabled defaultValue={price} className="mb-3" />
             <Form.Control
+              className="mb-3"
               type="date"
               placeholder="date"
               name="date"
               onBlur={handleOnBlur}
             />
             <Form.Control
+              className="mb-3"
               type="number"
               placeholder="Your Number"
               name="phone"
@@ -73,15 +75,15 @@ const Purchase = () => {
             />
             <Button type="submit">Submit</Button>
           </Form>
-          <NavLink to="/home" className="d-inline ms-2">
-            <button className="btn btn-outline-info mt-2">
+          <NavLink to="/home" className="d-inline">
+            <button className="btn btn-outline-info mt-3">
               <FontAwesomeIcon icon={faBackward} className="me-2" />
               GO Back Home
             </button>
           </NavLink>
         </div>
         <div className="col-md-6 border p-4">
-          {/* <img src={url} alt="update" className="img-fluid" /> */}
+          <img src={url} alt="update" className="img-fluid" />
         </div>
       </div>
     </div>
