@@ -6,7 +6,7 @@ import "./Bike.css";
 const Bike = (props) => {
   const { id, title, details, img, price } = props.bike;
   return (
-    <div className="col-lg-4 col-md-6 offer">
+    <div className="col-lg-4 col-md-6 bike">
       <div className="col">
         <div
           className="card p-2 text-center shadow"

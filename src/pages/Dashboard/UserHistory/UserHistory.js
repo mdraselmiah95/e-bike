@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import useAuth from "../../../hooks/useAuth";
-
+import "./useHistory.css";
 const UserHistory = () => {
   const { user } = useAuth();
   const [userHistory, setUserHistory] = useState([]);
@@ -12,7 +12,7 @@ const UserHistory = () => {
       .then((data) => setUserHistory(data));
   }, []);
   return (
-    <div className="">
+    <div className="useHistory">
       <h3>Single User Information</h3>
       <table className="table table-striped table-hover">
         <caption>Total Purchase order : {userHistory.length}</caption>

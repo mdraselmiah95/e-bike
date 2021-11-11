@@ -4,7 +4,7 @@ import "./Questions.css";
 const Questions = () => {
   const url = "https://i.ibb.co/zSgnH6y/undraw-Questions.png";
   return (
-    <div id="section-three">
+    <div id="section-three Questions">
       <div className="section-three-container container text-center pt-5 p-4">
         <h2>
           <span className="one">Frequently Asked </span>

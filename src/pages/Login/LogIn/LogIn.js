@@ -1,5 +1,9 @@
 import { faGoogle } from "@fortawesome/free-brands-svg-icons";
-import { faUsers } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAngleDoubleRight,
+  faUnlockAlt,
+  faUsers,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
@@ -53,10 +57,14 @@ const LogIn = () => {
               name="password"
               onChange={handleOnChange}
             />
-            <Button type="submit">LogIn</Button>
+            <Button type="submit">
+              <FontAwesomeIcon icon={faUnlockAlt} className="me-2" />
+              LogIn
+            </Button>
             <NavLink style={{ textDecoration: "none" }} to="/register">
               <button className="btn btn-outline-secondary  text-uppercase">
                 New User? Please Register
+                <FontAwesomeIcon icon={faAngleDoubleRight} className="mx-2" />
               </button>
             </NavLink>
           </Form>

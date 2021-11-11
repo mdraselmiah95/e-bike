@@ -1,3 +1,9 @@
+import {
+  faAngleDoubleLeft,
+  faUserLock,
+  faUsers,
+} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import { NavLink, useHistory } from "react-router-dom";
@@ -27,7 +33,10 @@ const Register = () => {
 
   return (
     <div className="container my-5">
-      <h2 className="fw-bold text-success">Create New Account:</h2>
+      <h2 className="fw-bold text-success">
+        <FontAwesomeIcon icon={faUsers} className="me-2" />
+        Create New Account:
+      </h2>
       <div className="row align-items-center">
         <div className="col-md-6">
           <img
@@ -67,9 +76,17 @@ const Register = () => {
                 name="password2"
                 onBlur={handleOnBlur}
               />
-              <Button type="submit">Register</Button>
+              <Button type="submit">
+                <FontAwesomeIcon icon={faUserLock} className="me-2" />
+                Register
+              </Button>
               <NavLink style={{ textDecoration: "none" }} to="/login">
                 <button className="btn btn-outline-secondary text-uppercase">
+                  <FontAwesomeIcon
+                    icon={faAngleDoubleLeft}
+                    className="me-2 
+                "
+                  />
                   Already Registered? Please Login
                 </button>
               </NavLink>

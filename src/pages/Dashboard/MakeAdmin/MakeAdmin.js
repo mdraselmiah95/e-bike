@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Form } from "react-bootstrap";
-
+import "./makeAdmin.css";
 const MakeAdmin = () => {
   const [email, setEmail] = useState("");
   const [success, setSuccess] = useState(false);
@@ -25,7 +25,7 @@ const MakeAdmin = () => {
   };
   return (
     <div className="container text-center">
-      <h2 className="my-3">MakeAdmin</h2>
+      <h3 className="my-3 MakeAdmin">MakeAdmin</h3>
       <div>
         <Form onSubmit={handleAdminSubmit} className="text-center">
           <Form.Control
