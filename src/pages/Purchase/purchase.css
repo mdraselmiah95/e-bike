@@ -1,0 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+.PURCHASE {
+  font-family: "DM Serif Display", serif;
+  letter-spacing: 2.8px;
+  font-weight: 800;
+}

@@ -1,11 +1,11 @@
-import { faBackward } from "@fortawesome/free-solid-svg-icons";
+import { faBackward, faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React, { useEffect, useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import { useParams } from "react-router";
 import { NavLink } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
-
+import "./purchase.css";
 const Purchase = () => {
   // const [loader, setLoader] = useState(true);
   const [purchaseSuccess, setPurchaseSuccess] = useState(false);
@@ -70,7 +70,7 @@ const Purchase = () => {
 
   return (
     <div className="container my-5">
-      <h2 className="text-center fw-bold itemsDelete my-3 text-success">
+      <h2 className="text-center fw-bold itemsDelete my-3 text-success PURCHASE">
         PURCHASE
       </h2>
       <div className="row align-items-center">
@@ -104,7 +104,10 @@ const Purchase = () => {
               name="phone"
               onBlur={handleOnBlur}
             />
-            <Button type="submit">Submit</Button>
+            <Button type="submit">
+              <FontAwesomeIcon icon={faCheckCircle} className="me-2" />
+              Submit
+            </Button>
           </Form>
           <NavLink to="/home" className="d-inline">
             <button className="btn btn-outline-info mt-3">
