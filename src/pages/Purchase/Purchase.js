@@ -63,7 +63,6 @@ const Purchase = () => {
           setPurchaseSuccess(true);
         }
       });
-
     e.preventDefault();
   };
 
