@@ -8,6 +8,7 @@ import useAuth from "../../hooks/useAuth";
 
 const Purchase = () => {
   // const [loader, setLoader] = useState(true);
+  const [purchaseSuccess, setPurchaseSuccess] = useState(false);
   const { user } = useAuth();
   const { id } = useParams();
   const [moreBikes, setMoreBikes] = useState([]);
@@ -36,7 +37,6 @@ const Purchase = () => {
     const value = e.target.value;
     const newInfo = { ...purchase };
     newInfo[field] = value;
-    console.log(newInfo);
     setPurchase(newInfo);
   };
 
@@ -47,10 +47,28 @@ const Purchase = () => {
       price,
       ProductName: title,
     };
-    console.log(productPurchase);
+
+    // send to the server
+
+    fetch("http://localhost:5000/purchase", {
+      method: "POST",
+      headers: {
+        "content-type": "application/json",
+      },
+      body: JSON.stringify(productPurchase),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.insertedId) {
+          setPurchaseSuccess(true);
+        }
+      });
+
     e.preventDefault();
   };
+
   const url = "https://i.ibb.co/2PLcyzK/purchase.png";
+
   return (
     <div className="container my-5">
       <h2 className="text-center fw-bold itemsDelete my-3 text-success">
@@ -100,6 +118,11 @@ const Purchase = () => {
           <img src={url} alt="update" className="img-fluid" />
         </div>
       </div>
+      {purchaseSuccess && (
+        <div className="alert alert-success" role="alert">
+          Purchase successfully!
+        </div>
+      )}
     </div>
   );
 };

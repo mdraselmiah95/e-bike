@@ -26,7 +26,7 @@ const Bikes = () => {
         )}
         <div className="row row-cols-1 row-cols-md-3 g-4">
           {bikes.map((bike) => (
-            <Bike key={bike.id} bike={bike} />
+            <Bike key={bike._id} bike={bike} />
           ))}
         </div>
       </div>

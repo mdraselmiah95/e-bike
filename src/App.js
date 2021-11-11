@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./App.css";
 import AuthProvider from "./contexts/AuthProvider/AuthProvider";
 import BikeDetails from "./pages/BikeDetails/BikeDetails";
+import Dashboard from "./pages/Dashboard/Dashboard/Dashboard";
 import Home from "./pages/Home/Home/Home";
 import LogIn from "./pages/Login/LogIn/LogIn";
 import PrivateRoute from "./pages/Login/PrivateRoute/PrivateRoute";
@@ -37,6 +38,9 @@ function App() {
           </PrivateRoute>
           <PrivateRoute path="/bikeDetails/:id">
             <BikeDetails />
+          </PrivateRoute>
+          <PrivateRoute path="/dashboard">
+            <Dashboard />
           </PrivateRoute>
           <Route path="/login">
             <LogIn />

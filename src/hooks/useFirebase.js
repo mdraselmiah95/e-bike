@@ -29,6 +29,9 @@ const useFirebase = () => {
         setAuthError("");
         const newUser = { email, displayName: name };
         setUser(newUser);
+
+        // save user to the database
+        saveUser(email, name);
         //send name to firebase after creation
         updateProfile(auth.currentUser, {
           displayName: name,
@@ -102,6 +105,17 @@ const useFirebase = () => {
         // An error happened.
       })
       .finally(() => setIsLoading(false));
+  };
+
+  const saveUser = (email, displayName, method) => {
+    // const user = { email, displayName };
+    // fetch("https://glacial-wave-71858.herokuapp.com/users", {
+    //   method: method,
+    //   headers: {
+    //     "content-type": "application/json",
+    //   },
+    //   body: JSON.stringify(user),
+    // }).then();
   };
 
   return {
