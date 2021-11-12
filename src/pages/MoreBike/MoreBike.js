@@ -13,7 +13,7 @@ const MoreBike = ({ bike }) => {
       <div className="col">
         <div
           className="card p-2 text-center shadow"
-          style={{ height: "570px" }}
+          style={{ height: "600px" }}
         >
           <img src={img} className="rounded img-fluid" alt="photos" />
           <div className="card-body">

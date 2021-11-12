@@ -19,7 +19,7 @@ const Bike = (props) => {
             <h3>{price}</h3>
             <div className="d-flex justify-content-between">
               <Link to={`/bikeDetails/${id}`}>
-                <button className="btn btn-outline-dark">
+                <button className="btn btn-outline-dark me-2">
                   <FontAwesomeIcon
                     icon={faInfo}
                     className="me-2 
