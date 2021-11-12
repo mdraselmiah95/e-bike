@@ -1,4 +1,4 @@
-import { faPlusSquare } from "@fortawesome/free-regular-svg-icons";
+import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
 import React from "react";
@@ -13,7 +13,6 @@ const Review = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
     axios.post("http://localhost:5000/review", data).then((res) => {
       if (res.data.insertedId) {
         alert("Added Successfully");
@@ -22,12 +21,21 @@ const Review = () => {
     });
   };
 
-  const url = "https://i.ibb.co/h2NwZc5/add.png";
+  const url = "https://i.ibb.co/BtT39wn/review.png";
   return (
-    <div className="container addProduct">
-      <h2 className="text-center fw-bold my-2">
-        <FontAwesomeIcon icon={faPlusSquare} className="me-2" />
+    <div className="container addProduct my-5">
+      <h2 className="text-center fw-bold mb-3">
+        <FontAwesomeIcon
+          icon={faQuoteLeft}
+          className="me-2 
+                "
+        />
         Add Your Review
+        <FontAwesomeIcon
+          icon={faQuoteRight}
+          className="ms-2 
+                "
+        />
       </h2>
       <div className="row align-items-center">
         <div className="col-md-6 p-3">

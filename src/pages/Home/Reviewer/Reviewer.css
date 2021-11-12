@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+.reviewer h4 {
+  color: #23a6f0;
+  font-family: "DM Serif Display", serif;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+}
+
+.reviewer p {
+  font-family: "Roboto Slab", serif;
+  font-size: 1rem;
+  padding: 0px 3%;
+  letter-spacing: 0.2px;
+  color: rgb(108, 108, 108);
+}
