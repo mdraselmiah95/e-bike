@@ -1,8 +1,5 @@
-import {
-  faAngleDoubleRight,
-  faPlus,
-  faTrash,
-} from "@fortawesome/free-solid-svg-icons";
+import { faTrashAlt } from "@fortawesome/free-regular-svg-icons";
+import { faAngleDoubleRight, faPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
@@ -57,10 +54,10 @@ const MoreBike = ({ bike }) => {
                 </NavLink>
               )}
               {admin && (
-                <NavLink to="/dashboard/" className="d-inline ms-2">
+                <NavLink to="/dashboard/delete" className="d-inline ms-2">
                   <button className="btn btn-outline-dark">
                     <FontAwesomeIcon
-                      icon={faTrash}
+                      icon={faTrashAlt}
                       className="me-2 
                 "
                     />

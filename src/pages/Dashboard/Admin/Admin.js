@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from "react";
 import "./admin.css";
 const Admin = () => {
-  // const [loader, setLoader] = useState(true);
+  const [loader, setLoader] = useState(true);
   const [items, setItems] = useState([]);
   useEffect(() => {
     fetch("http://localhost:5000/purchaseItems")
       .then((res) => res.json())
       .then((data) => {
         setItems(data);
-        // setLoader(false);
+        setLoader(false);
       });
   }, []);
   return (
@@ -16,6 +16,11 @@ const Admin = () => {
       <h3 className="my-3">All Users Information</h3>
       <table className="table table-striped table-hover">
         <caption>Total Purchase order : {items.length}</caption>
+        {loader && (
+          <div className="spinner-border text-warning my-3" role="status">
+            <span className="visually-hidden">Loading...</span>
+          </div>
+        )}
         <thead>
           <tr>
             <th scope="col" className="table-secondary">

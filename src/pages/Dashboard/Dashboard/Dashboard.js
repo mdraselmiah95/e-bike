@@ -2,6 +2,7 @@ import { faStripeS } from "@fortawesome/free-brands-svg-icons";
 import { faPlusSquare } from "@fortawesome/free-regular-svg-icons";
 import {
   faChalkboard,
+  faEraser,
   faShoppingBag,
   faSort,
   faTasks,
@@ -14,6 +15,7 @@ import useAuth from "../../../hooks/useAuth";
 import AdminRoute from "../../Login/AdminRoute/AdminRoute";
 import AddProduct from "../AddProduct/AddProduct";
 import Admin from "../Admin/Admin";
+import Delete from "../Delete/Delete";
 import MakeAdmin from "../MakeAdmin/MakeAdmin";
 import MakePayment from "../MakePayment/MakePayment";
 import UserHistory from "../UserHistory/UserHistory";
@@ -92,6 +94,12 @@ const Dashboard = () => {
                     Add Product
                   </button>
                 </Link>
+                <Link to={`${url}/delete`}>
+                  <button className="btn btn-secondary">
+                    <FontAwesomeIcon icon={faEraser} className="me-2" />
+                    Delete
+                  </button>
+                </Link>
               </div>
             )}
           </div>
@@ -112,6 +120,9 @@ const Dashboard = () => {
             </AdminRoute>
             <AdminRoute path={`${path}/addProduct`}>
               <AddProduct />
+            </AdminRoute>
+            <AdminRoute path={`${path}/delete`}>
+              <Delete />
             </AdminRoute>
           </Switch>
         </div>
