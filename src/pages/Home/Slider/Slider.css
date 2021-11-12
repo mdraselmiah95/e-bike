@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ultra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap");
+.carousel-caption {
+  top: 1.25rem !important;
+  left: 10% !important;
+  right: 6% !important;
+  text-align: right !important;
+}
+.slider h3 {
+  font-family: "Ultra", serif;
+  letter-spacing: 1.5px;
+}
+.slider p {
+  font-family: "DM Serif Display", serif;
+  letter-spacing: 1px;
+}
