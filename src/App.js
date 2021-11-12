@@ -12,6 +12,7 @@ import MoreBike from "./pages/MoreBike/MoreBike";
 import MoreBikes from "./pages/MoreBikes/MoreBikes";
 import NotFound from "./pages/NotFound/NotFound";
 import Purchase from "./pages/Purchase/Purchase";
+import Review from "./pages/Review/Review";
 import Footer from "./pages/Shared/Footer/Footer";
 import Header from "./pages/Shared/Header/Header";
 
@@ -26,6 +27,9 @@ function App() {
           </Route>
           <Route exact path="/home">
             <Home />
+          </Route>
+          <Route path="/review">
+            <Review />
           </Route>
           <Route exact path="/moreBikes">
             <MoreBikes />

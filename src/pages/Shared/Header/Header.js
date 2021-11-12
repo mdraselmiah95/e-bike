@@ -30,6 +30,9 @@ const Header = () => {
             <Link className="navItem me-3" to="/moreBikes">
               Explore
             </Link>
+            <Link className="navItem me-3" to="/review">
+              Review
+            </Link>
             {user.email ? (
               <NavLink className="me-2 fw-bold" to="/dashboard">
                 Dashboard
