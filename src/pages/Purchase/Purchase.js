@@ -14,7 +14,7 @@ const Purchase = () => {
   const [moreBikes, setMoreBikes] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/moreBike")
+    fetch("https://mysterious-anchorage-44004.herokuapp.com/moreBike")
       .then((res) => res.json())
       .then((data) => {
         setMoreBikes(data);
@@ -50,7 +50,7 @@ const Purchase = () => {
 
     // send to the server
 
-    fetch("http://localhost:5000/purchase", {
+    fetch("https://mysterious-anchorage-44004.herokuapp.com/purchase", {
       method: "POST",
       headers: {
         "content-type": "application/json",

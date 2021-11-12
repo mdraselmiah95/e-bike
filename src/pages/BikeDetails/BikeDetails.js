@@ -9,7 +9,7 @@ const BikeDetails = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/bikes")
+    fetch("https://mysterious-anchorage-44004.herokuapp.com/bikes")
       .then((res) => res.json())
       .then((result) => {
         setData(result);

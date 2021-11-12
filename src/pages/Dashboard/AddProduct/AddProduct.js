@@ -13,12 +13,14 @@ const AddProduct = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    axios.post("http://localhost:5000/moreBike", data).then((res) => {
-      if (res.data.insertedId) {
-        alert("Added Successfully");
-        reset();
-      }
-    });
+    axios
+      .post("https://mysterious-anchorage-44004.herokuapp.com/moreBike", data)
+      .then((res) => {
+        if (res.data.insertedId) {
+          alert("Added Successfully");
+          reset();
+        }
+      });
   };
 
   const url = "https://i.ibb.co/h2NwZc5/add.png";

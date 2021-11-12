@@ -4,7 +4,7 @@ const Admin = () => {
   const [loader, setLoader] = useState(true);
   const [items, setItems] = useState([]);
   useEffect(() => {
-    fetch("http://localhost:5000/purchaseItems")
+    fetch("https://mysterious-anchorage-44004.herokuapp.com/purchaseItems")
       .then((res) => res.json())
       .then((data) => {
         setItems(data);
