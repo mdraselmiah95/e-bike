@@ -1,10 +1,16 @@
-import { faAngleDoubleRight } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAngleDoubleRight,
+  faPlus,
+  faTrash,
+} from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import useAuth from "../../hooks/useAuth";
 import "./MoreBike.css";
 const MoreBike = ({ bike }) => {
   const { title, details, img, price } = bike;
+  const { admin } = useAuth();
   return (
     <div className="col-lg-4 col-md-6 moreBike">
       <div className="col">
@@ -17,7 +23,7 @@ const MoreBike = ({ bike }) => {
             <h4 className="card-title py-3">{title}</h4>
             <p className="">{details}</p>
             <h3>{price}</h3>
-            <div className="d-flex justify-content-between">
+            <div className="d-flex justify-content-center">
               {/* <Link to={`/bikeDetails/${id}`}>
                 <button className="btn btn-outline-dark">
                   <FontAwesomeIcon
@@ -38,6 +44,30 @@ const MoreBike = ({ bike }) => {
                   PURCHASE
                 </button>
               </Link>
+              {admin && (
+                <NavLink to="/dashboard/addProduct" className="d-inline ms-2">
+                  <button className="btn btn-outline-dark">
+                    <FontAwesomeIcon
+                      icon={faPlus}
+                      className="me-2 
+                "
+                    />
+                    Add
+                  </button>
+                </NavLink>
+              )}
+              {admin && (
+                <NavLink to="/dashboard/" className="d-inline ms-2">
+                  <button className="btn btn-outline-dark">
+                    <FontAwesomeIcon
+                      icon={faTrash}
+                      className="me-2 
+                "
+                    />
+                    Delete
+                  </button>
+                </NavLink>
+              )}
             </div>
           </div>
         </div>

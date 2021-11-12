@@ -1,9 +1,11 @@
 import { faStripeS } from "@fortawesome/free-brands-svg-icons";
+import { faPlusSquare } from "@fortawesome/free-regular-svg-icons";
 import {
+  faChalkboard,
   faShoppingBag,
-  faUserCog,
+  faSort,
+  faTasks,
   faUserLock,
-  faUserShield,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
@@ -21,7 +23,14 @@ const Dashboard = () => {
   const { admin } = useAuth();
   return (
     <div className="container-fluid my-3 mx-1">
-      <h2 className="text-center fw-bolder my-3 Dashboard">Dashboard</h2>
+      <h2 className="text-center my-3 Dashboard">
+        <FontAwesomeIcon
+          icon={faChalkboard}
+          className="me-2 
+                "
+        />
+        Dashboard
+      </h2>
       <div className="row my-3">
         <div className="col-md-3 border py-2">
           <div>
@@ -38,11 +47,11 @@ const Dashboard = () => {
             <Link to={`${url}`}>
               <button className="btn btn-secondary">
                 <FontAwesomeIcon
-                  icon={faUserCog}
+                  icon={faSort}
                   className="me-2 
                 "
                 />
-                Dashboard
+                My Orders
               </button>
             </Link>
             <Link to={`${url}/payment`}>
@@ -70,21 +79,24 @@ const Dashboard = () => {
                 <Link to={`${url}/admin`}>
                   <button className="btn btn-secondary">
                     <FontAwesomeIcon
-                      icon={faUserShield}
+                      icon={faTasks}
                       className="me-2 
                 "
                     />
-                    Admin
+                    Manage All Orders
                   </button>
                 </Link>
                 <Link to={`${url}/addProduct`}>
-                  <button className="btn btn-secondary">Add Product</button>
+                  <button className="btn btn-secondary">
+                    <FontAwesomeIcon icon={faPlusSquare} className="me-2" />
+                    Add Product
+                  </button>
                 </Link>
               </div>
             )}
           </div>
         </div>
-        <div className="col-md-9 border py-5">
+        <div className="col-md-9 border py-3">
           <Switch>
             <Route exact path={path}>
               <UserHistory />
