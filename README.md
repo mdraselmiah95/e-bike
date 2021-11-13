@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Welcome To The E-Bike Store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+E-Bike Store Live Link [The E-Bike](https://e-bike-8dbd1.web.app/).
 
-## Available Scripts
+### Welcome To The Bikers World (FEEL EVERYTHING. EXPERIENCE ZERO)
 
-In the project directory, you can run:
+### One of the Largest website about motorcycle in USA.
 
-### `yarn start`
+### Riding a Zero is an experience like no other. Schedule your transformational test ride today.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Don't Just looked at our Product ,Experience Them.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Our team remains available by email to answer all your questions.
 
-### `yarn test`
+#### AUTOMATIC DCT TRANSMISSION.Exclusive technology that will change the way you ride.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Update Your Gold Wing with Android Auto. Check Out the Newest Gold Wing Navi Features
 
-### `yarn build`
+## Available Features:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- RAPID CHARGING (Full charge in as fast as 1hr.)
+- LOW-TO-NO MAINTENANCE (Fluidity without the fluids.)
+- 223MI PEAK RANGE (SFO to Sacramento, roundtrip.)
+- 124MPH TOP SPEED (No clutch. No gears. Just go.)
+- CYPHER III+ (Advanced motorcycle performance customization)
+- INSTANT TORQUE (Up to 140ft/lbs of Torque.)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Website Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Functional Welcome
+- User can interact
+- Also User can add reviews
+- Admin has some special roles>>
+- Admin can Add, Delete ,Manage all products also make admin
+- A lot of interaction are available here, just experience them.
 
-### `yarn eject`
+## Last but not the least Welcome To Your Bikers Daydream...
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+#### If you’re as passionate as we are about motorcycles, you’re constantly on a mission to educate yourself and find influence within the industry. So Welcome!
