@@ -17,7 +17,6 @@ const Review = () => {
       .post("https://mysterious-anchorage-44004.herokuapp.com/review", data)
       .then((res) => {
         if (res.data.insertedId) {
-          // alert("Added Successfully");
           Swal.fire({
             icon: "success",
             title: "Thank you",
