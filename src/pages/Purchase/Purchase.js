@@ -1,9 +1,10 @@
 import { faBackward, faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Button, Form } from "react-bootstrap";
 import { useParams } from "react-router";
 import { NavLink } from "react-router-dom";
+import Swal from "sweetalert2";
 import useAuth from "../../hooks/useAuth";
 import "./purchase.css";
 const Purchase = () => {
@@ -120,11 +121,15 @@ const Purchase = () => {
           <img src={url} alt="update" className="img-fluid" />
         </div>
       </div>
-      {purchaseSuccess && (
-        <div className="alert alert-success" role="alert">
-          Purchase successfully!
-        </div>
-      )}
+      {purchaseSuccess &&
+        // <div className="alert alert-success" role="alert">
+        //   Purchase successfully!
+        // </div>
+        Swal.fire({
+          icon: "success",
+          title: "Thank you",
+          text: "You successfully purchase the product.",
+        })}
     </div>
   );
 };
