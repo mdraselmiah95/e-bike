@@ -42,7 +42,11 @@ const Purchase = () => {
   };
 
   const handleBookingSubmit = (e) => {
-    alert("submitting");
+    // alert("submitting");
+    Swal.fire({
+      icon: "success",
+      title: "Submitting",
+    });
     const productPurchase = {
       ...purchase,
       price,
@@ -121,15 +125,18 @@ const Purchase = () => {
           <img src={url} alt="update" className="img-fluid" />
         </div>
       </div>
-      {purchaseSuccess &&
-        // <div className="alert alert-success" role="alert">
-        //   Purchase successfully!
-        // </div>
-        Swal.fire({
-          icon: "success",
-          title: "Thank you",
-          text: "You successfully purchase the product.",
-        })}
+      {
+        purchaseSuccess && (
+          <div className="alert alert-success" role="alert">
+            Purchase successfully!
+          </div>
+        )
+        // Swal.fire({
+        //   icon: "success",
+        //   title: "Thank you",
+        //   text: "You successfully purchase the product.",
+        // })
+      }
     </div>
   );
 };
