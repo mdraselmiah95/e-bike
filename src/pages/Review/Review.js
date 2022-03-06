@@ -1,8 +1,8 @@
 import { faQuoteLeft, faQuoteRight } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
-import React from "react";
 import { useForm } from "react-hook-form";
+import Swal from "sweetalert2";
 import "./Review.css";
 const Review = () => {
   const {
@@ -17,7 +17,12 @@ const Review = () => {
       .post("https://mysterious-anchorage-44004.herokuapp.com/review", data)
       .then((res) => {
         if (res.data.insertedId) {
-          alert("Added Successfully");
+          // alert("Added Successfully");
+          Swal.fire({
+            icon: "success",
+            title: "Thank you",
+            text: "You successfully add the review",
+          });
           reset();
         }
       });
