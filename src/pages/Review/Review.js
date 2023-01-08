@@ -13,7 +13,7 @@ const Review = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    axios.post("https://e-bike-server.vercel.app/review", data).then((res) => {
+    axios.post("https://e-bike-server.vercel.app/reviews", data).then((res) => {
       if (res.data.insertedId) {
         Swal.fire({
           icon: "success",
