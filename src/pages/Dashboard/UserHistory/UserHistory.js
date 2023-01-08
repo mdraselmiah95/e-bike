@@ -6,7 +6,7 @@ const UserHistory = () => {
   const [userHistory, setUserHistory] = useState([]);
 
   useEffect(() => {
-    const url = `https://mysterious-anchorage-44004.herokuapp.com/purchase?email=${user.email}`;
+    const url = `https://e-bike-server.vercel.app/purchase?email=${user.email}`;
     fetch(url)
       .then((res) => res.json())
       .then((data) => setUserHistory(data));

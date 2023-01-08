@@ -5,7 +5,7 @@ const Bikes = () => {
   const [loader, setLoader] = useState(true);
   const [bikes, setBikes] = useState([]);
   useEffect(() => {
-    fetch("https://mysterious-anchorage-44004.herokuapp.com/bikes")
+    fetch("https://e-bike-server.vercel.app/bikes")
       .then((res) => res.json())
       .then((data) => {
         setBikes(data);

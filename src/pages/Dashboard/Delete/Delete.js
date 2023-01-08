@@ -6,7 +6,7 @@ const Delete = () => {
   const [loader, setLoader] = useState(true);
   const [items, setItems] = useState([]);
   useEffect(() => {
-    fetch("https://mysterious-anchorage-44004.herokuapp.com/moreBike")
+    fetch("https://e-bike-server.vercel.app/moreBike")
       .then((res) => res.json())
       .then((data) => {
         setItems(data);
@@ -15,7 +15,7 @@ const Delete = () => {
   }, []);
 
   const handleDelete = (id) => {
-    const url = `https://mysterious-anchorage-44004.herokuapp.com/moreBike/${id}`;
+    const url = `https://e-bike-server.vercel.app/moreBike/${id}`;
     fetch(url, {
       method: "DELETE",
     })

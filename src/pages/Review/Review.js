@@ -13,18 +13,16 @@ const Review = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    axios
-      .post("https://mysterious-anchorage-44004.herokuapp.com/review", data)
-      .then((res) => {
-        if (res.data.insertedId) {
-          Swal.fire({
-            icon: "success",
-            title: "Thank you",
-            text: "You successfully add the review",
-          });
-          reset();
-        }
-      });
+    axios.post("https://e-bike-server.vercel.app/review", data).then((res) => {
+      if (res.data.insertedId) {
+        Swal.fire({
+          icon: "success",
+          title: "Thank you",
+          text: "You successfully add the review",
+        });
+        reset();
+      }
+    });
   };
 
   const url = "https://i.ibb.co/BtT39wn/review.png";

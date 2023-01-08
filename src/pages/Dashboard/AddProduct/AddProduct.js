@@ -14,7 +14,7 @@ const AddProduct = () => {
 
   const onSubmit = (data) => {
     axios
-      .post("https://mysterious-anchorage-44004.herokuapp.com/moreBike", data)
+      .post("https://e-bike-server.vercel.app/moreBike", data)
       .then((res) => {
         if (res.data.insertedId) {
           alert("Added Successfully");

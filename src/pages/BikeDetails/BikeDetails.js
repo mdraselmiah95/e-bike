@@ -9,7 +9,7 @@ const BikeDetails = () => {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    fetch("https://mysterious-anchorage-44004.herokuapp.com/bikes")
+    fetch("https://e-bike-server.vercel.app/bikes")
       .then((res) => res.json())
       .then((result) => {
         setData(result);

@@ -15,7 +15,7 @@ const Purchase = () => {
   const [moreBikes, setMoreBikes] = useState([]);
 
   useEffect(() => {
-    fetch("https://mysterious-anchorage-44004.herokuapp.com/moreBike")
+    fetch("https://e-bike-server.vercel.app/moreBike")
       .then((res) => res.json())
       .then((data) => {
         setMoreBikes(data);
@@ -55,7 +55,7 @@ const Purchase = () => {
 
     // send to the server
 
-    fetch("https://mysterious-anchorage-44004.herokuapp.com/purchase", {
+    fetch("https://e-bike-server.vercel.app/purchase", {
       method: "POST",
       headers: {
         "content-type": "application/json",
